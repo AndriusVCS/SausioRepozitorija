@@ -12,7 +12,7 @@ namespace PirmasProjektas
     {
         static void Main(string[] args)
         {
-            int kazkoksSkaicius = 9999;
+            int kazkoksSkaicius = 9999 + 1;
 
             switch (kazkoksSkaicius)
             {
