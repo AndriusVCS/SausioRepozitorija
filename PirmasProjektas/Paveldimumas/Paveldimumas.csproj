@@ -45,12 +45,14 @@
   <ItemGroup>
     <Compile Include="GalvaKorta.cs" />
     <Compile Include="Gyventojas.cs" />
+    <Compile Include="IGaliuEiti.cs" />
     <Compile Include="Korta.cs" />
     <Compile Include="KortuKalade.cs" />
     <Compile Include="Pilietis.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SkaitineKorta.cs" />
+    <Compile Include="Suniukas.cs" />
     <Compile Include="Tuzas.cs" />
     <Compile Include="Zmogus.cs" />
   </ItemGroup>

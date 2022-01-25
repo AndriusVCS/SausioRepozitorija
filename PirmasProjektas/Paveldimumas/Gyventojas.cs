@@ -11,7 +11,7 @@ namespace Paveldimumas
             GyvenamojiVieta = gyvenamojiVieta;
         }
 
-        public override void Info()
+        public sealed override void Info()
         {
             base.Info();
             Console.WriteLine($"Mano gyvenamoji vieta: {GyvenamojiVieta}");
