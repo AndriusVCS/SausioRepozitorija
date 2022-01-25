@@ -1,10 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Paveldimumas
 {
     class KortuKalade
     {
-        public List<Korta> KortuSarasas { get; }
+        public List<Korta> KortuSarasas { get; private set; }
 
         public KortuKalade()
         {
@@ -22,7 +24,7 @@ namespace Paveldimumas
         
         private void UzpildytiZenklu(string zenklas)
         {
-            for(int i = 2; i <= 10; i++)
+            for (int i = 2; i <= 10; i++)
             {
                 KortuSarasas.Add(new SkaitineKorta(i, zenklas));
             }
@@ -32,6 +34,12 @@ namespace Paveldimumas
             KortuSarasas.Add(new GalvaKorta("Karalius", zenklas));
 
             KortuSarasas.Add(new Tuzas(zenklas));
+        }
+
+        public void Sumaisyti()
+        {
+            var random = new Random();
+            KortuSarasas = KortuSarasas.OrderBy(korta => random.Next()).ToList();
         }
     }
 }

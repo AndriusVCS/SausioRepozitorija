@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Paveldimumas
 {
@@ -6,7 +7,10 @@ namespace Paveldimumas
     {
         static void Main(string[] args)
         {
-            ZmogausUzdavinys();
+            Zaidimas manoZaidimas = new Zaidimas();
+            manoZaidimas.Pradeti();
+
+            //ZmogausUzdavinys();
             Console.ReadLine();
         }
 
