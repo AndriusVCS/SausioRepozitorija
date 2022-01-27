@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Paveldimumas
+{
+    class Suniukas : IGaliuEiti
+    {
+        public void Eiti()
+        {
+            Console.WriteLine("Einu keturiomis kojomis!");
+        }
+    }
+}
