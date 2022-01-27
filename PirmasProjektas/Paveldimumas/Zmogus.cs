@@ -2,7 +2,7 @@
 
 namespace Paveldimumas
 {
-    public class Zmogus : IGaliuEiti
+    public class Zmogus : IGaliuEiti, IGaliuKalbeti
     {
         public string Vardas { get; }
         public string Pavarde { get; }
@@ -27,6 +27,11 @@ namespace Paveldimumas
         public void Eiti()
         {
             Console.WriteLine("Einu dviejomis kojomis!");
+        }
+
+        public void Kalbeti()
+        {
+            Console.WriteLine("Kalbu, labas!");
         }
     }
 }

@@ -43,15 +43,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Apskritimas.cs" />
+    <Compile Include="Figura.cs" />
     <Compile Include="GalvaKorta.cs" />
     <Compile Include="Gyventojas.cs" />
     <Compile Include="IGaliuEiti.cs" />
+    <Compile Include="IGaliuKalbeti.cs" />
+    <Compile Include="IGeometrija.cs" />
+    <Compile Include="IInformacija.cs" />
     <Compile Include="Korta.cs" />
     <Compile Include="KortuKalade.cs" />
+    <Compile Include="Kvadratas.cs" />
+    <Compile Include="PapildomaKlase.cs" />
     <Compile Include="Pilietis.cs" />
+    <Compile Include="PilnaiAbstraktiKlase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SkaitineKorta.cs" />
+    <Compile Include="Staciakampis.cs" />
+    <Compile Include="StatusisTrikampis.cs" />
     <Compile Include="Suniukas.cs" />
     <Compile Include="Tuzas.cs" />
     <Compile Include="Zmogus.cs" />

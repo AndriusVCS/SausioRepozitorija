@@ -9,10 +9,45 @@ namespace Paveldimumas
     {
         static void Main(string[] args)
         {
-            InterfacePavyzdys();
+            //GeometrijosUzdavinys();
+            Kvadratas kvadratas = new Kvadratas(5);
+            kvadratas.Metodas();
 
+            //InterfacePavyzdys();
             //ZmogausUzdavinys();
             Console.ReadLine();
+        }
+
+        private static void GeometrijosUzdavinys()
+        {
+            List<Figura> figuruSarasas = new List<Figura>()
+            {
+                new Kvadratas(3),
+                new Staciakampis(3, 4),
+                new StatusisTrikampis(3, 4),
+                new Apskritimas(3)
+            };
+
+            List<IGeometrija> geometrijuSarasas = new List<IGeometrija>()
+            {
+                new Kvadratas(3),
+                new Staciakampis(3, 4),
+                new StatusisTrikampis(3, 4),
+                new Apskritimas(3)
+            };
+
+            List<IInformacija> informacijuSarasas = new List<IInformacija>()
+            {
+                new Kvadratas(3),
+                new Staciakampis(3, 4),
+                new StatusisTrikampis(3, 4),
+                new Apskritimas(3)
+            };
+
+            foreach (var item in informacijuSarasas)
+            {
+                item.Info();
+            }            
         }
 
         private static void InterfacePavyzdys()
